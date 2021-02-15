@@ -4,20 +4,15 @@ import faker from 'faker'
 faker.locale = 'es'
 import {resolve, extend} from 'json-schema-faker'
 import ObjToCsv  from 'objects-to-csv'
-
 import composedSchema, {models} from './models'
 
-console.log('Schema', composedSchema)
-
 const type = 'csv'
-const entity = 'colaboradores'
+const entity = 'productos'
 
 extend('faker', () => faker)
 
-resolve(composedSchema.properties.colaboradores, models).then(async (result) => {
-  console.log('RESULT', result)
+resolve(composedSchema.properties.productos, models).then(async (result) => {
   const csv = new ObjToCsv(result)
-  console.log('csv', csv)
   const filePath = `${__dirname}/${entity}`
   if(type === 'csv'){
     await csv.toDisk(`${filePath}.csv`)
