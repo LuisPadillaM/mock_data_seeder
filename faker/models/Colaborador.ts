@@ -8,6 +8,8 @@ const colaboradores = {
       type: 'object',
       required: [
         'id',
+        'acuerdo',
+        'certificaciones',
         'nombre',
         'apellido',
         'email',
@@ -16,6 +18,23 @@ const colaboradores = {
       properties: {
         id: {
           $ref: '#/definitions/positiveInt',
+        },
+        acuerdo: {
+          type: 'string',
+          enum: [
+              'Si',
+              'No'
+          ]
+        },
+        certificaciones: {
+          type: 'array',
+          items: {
+            enum: [
+                'certificacion 1',
+                'certificacion 2',
+                'certificacion 3',
+            ]
+          },
         },
         nombre: {
           type: 'string',

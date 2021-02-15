@@ -12,6 +12,7 @@ const productos = {
                 'descripcion',
                 'imagen',
                 'tipo',
+                'floración',
                 'cantidad',
                 'precio'
             ],
@@ -21,7 +22,14 @@ const productos = {
                 },
                 nombre: {
                     type: 'string',
-                    faker: 'commerce.productName',
+                    enum: [
+                        'producto 1',
+                        'producto 2',
+                        'producto 3',
+                        'producto 4',
+                        'producto 5',
+                        'producto 6',
+                    ],
                 },
                 descripcion: {
                     type: 'string',
@@ -33,15 +41,22 @@ const productos = {
                 },
                 tipo: {
                     type: 'string',
-                    faker: 'commerce.productMaterial',
+                    enum : [
+                        'flor',
+                        'follaje',
+                    ]
                 },
                 cantidad: {
                     type: 'string',
-                    faker: 'finance.amount',
+                    faker: {
+                        'finance.amount': [1, 100],
+                    },
                 },
                 precio: {
                     type: 'string',
-                    faker: 'commerce.price',
+                    faker: {
+                        'commerce.price': [100, 10000, 2, '$'],
+                    },
                 }
             },
         },
