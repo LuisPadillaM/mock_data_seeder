@@ -46,11 +46,15 @@ const productos = {
                         'follaje',
                     ]
                 },
+                floracion: {
+                    type: 'integer',
+                    minimum: 7,
+                    maximum: 70
+                },
                 cantidad: {
-                    type: 'string',
-                    faker: {
-                        'finance.amount': [1, 100],
-                    },
+                    type: 'integer',
+                    minimum: 1,
+                    maximum: 100
                 },
                 precio: {
                     type: 'string',
