@@ -13,7 +13,7 @@ extend('faker', () => faker)
 
 resolve(composedSchema.properties.productos, models).then(async (result) => {
   const csv = new ObjToCsv(result)
-  const filePath = `${__dirname}/${entity}`
+  const filePath = `${__dirname}/generated/${entity}`
   if(type === 'csv'){
     await csv.toDisk(`${filePath}.csv`)
   } else {
