@@ -33,7 +33,7 @@ const colaboradores = {
           ]
         },
         certificaciones: {
-          type: 'array',
+          type: 'string',
           items: {
             enum: [
                 'certificacion 1',

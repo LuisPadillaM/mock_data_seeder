@@ -11,7 +11,8 @@ const clientes = {
                 'nombre',
                 'apellido',
                 'email',
-                'tel'
+                'tel',
+                'pais'
             ],
             properties: {
                 id: {
@@ -32,6 +33,17 @@ const clientes = {
                 tel: {
                     type: 'string',
                     faker: 'phone.phoneNumber',
+                },
+                pais: {
+                    type: 'string',
+                    enum: [
+                        'Costa Rica',
+                        'Francia',
+                        'Alemania',
+                        'España',
+                        'Bélgica',
+                        'Reino Unido'
+                    ]
                 }
             },
         },
