@@ -8,6 +8,7 @@ const colaboradores = {
       type: 'object',
       required: [
         'id',
+        'experiencia',
         'acuerdo',
         'certificaciones',
         'nombre',
@@ -18,6 +19,11 @@ const colaboradores = {
       properties: {
         id: {
           $ref: '#/definitions/positiveInt',
+        },
+        experiencia:  {
+          type: 'integer',
+          minimum: 0,
+          maximum: 40
         },
         acuerdo: {
           type: 'string',
