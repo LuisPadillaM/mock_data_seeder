@@ -1,6 +1,7 @@
 const colaboradores = {
   id: 'colaboradores',
   type: 'array',
+  minItems: 23,
   maxItems: 25,
   uniqueItems: true,
   items: {$ref: '#/definitions/colaboradores'},
@@ -35,13 +36,11 @@ const colaboradores = {
         },
         certificaciones: {
           type: 'string',
-          items: {
-            enum: [
-                'certificacion 1',
-                'certificacion 2',
-                'certificacion 3',
-            ]
-          },
+          enum: [
+              'certificacion 1',
+              'certificacion 2',
+              'certificacion 3',
+          ]
         },
         nombre: {
           type: 'string',

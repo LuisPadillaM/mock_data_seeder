@@ -1,6 +1,7 @@
 const clientes = {
     id: 'clientes',
     type: 'array',
+    minItems: 23,
     maxItems: 25,
     uniqueItems: true,
     items: {$ref: '#/definitions/clientes'},

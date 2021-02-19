@@ -7,11 +7,11 @@ import ObjToCsv  from 'objects-to-csv'
 import composedSchema, {models} from './models'
 
 const type = 'csv'
-const entity = 'productos'
+const entity = 'colaboradores'
 
 extend('faker', () => faker)
 
-resolve(composedSchema.properties.productos, models as Schema[]).then(async (result) => {
+resolve(composedSchema.properties.colaboradores, models as Schema[]).then(async (result) => {
   const csv = new ObjToCsv(result)
   const filePath = `${__dirname}/generated/${entity}`
   if(type === 'csv'){

@@ -1,6 +1,7 @@
 const productos = {
     id: 'productos',
     type: 'array',
+    minItems: 8,
     maxItems: 10,
     uniqueItems: true,
     items: {$ref: '#/definitions/productos'},
