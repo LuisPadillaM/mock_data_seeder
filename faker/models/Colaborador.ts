@@ -1,7 +1,8 @@
 const colaboradores = {
   id: 'colaboradores',
   type: 'array',
-  minItems: 20,
+  maxItems: 25,
+  uniqueItems: true,
   items: {$ref: '#/definitions/colaboradores'},
   definitions: {
     colaboradores: {
@@ -18,7 +19,7 @@ const colaboradores = {
       ],
       properties: {
         id: {
-          $ref: '#/definitions/positiveInt',
+          $ref: 'positiveInt',
         },
         experiencia:  {
           type: 'integer',
@@ -59,12 +60,7 @@ const colaboradores = {
           faker: 'phone.phoneNumber',
         }
       },
-    },
-    positiveInt: {
-      type: 'integer',
-      minimum: 0,
-      exclusiveMinimum: true,
-    },
+    }
   },
 }
 

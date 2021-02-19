@@ -1,6 +1,8 @@
 import colaboradores from './Colaborador'
 import clientes from './Clientes'
 import productos from './Productos'
+import id from './id'
+
 
 const composedSchema = {
     type: 'object',
@@ -15,17 +17,10 @@ const composedSchema = {
             $ref: 'productos'
         },
     },
-    definitions: {
-        positiveInt: {
-            type: 'integer',
-            minimum: 0,
-            exclusiveMinimum: true
-        }
-    },
 }
 
 export const models = [
-    colaboradores, clientes, productos
+    colaboradores, clientes, productos, id
 ]
 
 export default composedSchema

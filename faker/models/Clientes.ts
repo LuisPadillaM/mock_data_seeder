@@ -1,7 +1,8 @@
 const clientes = {
     id: 'clientes',
     type: 'array',
-    minItems: 20,
+    maxItems: 25,
+    uniqueItems: true,
     items: {$ref: '#/definitions/clientes'},
     definitions: {
         clientes: {
@@ -16,7 +17,7 @@ const clientes = {
             ],
             properties: {
                 id: {
-                    $ref: '#/definitions/positiveInt',
+                    $ref: 'positiveInt',
                 },
                 nombre: {
                     type: 'string',
@@ -46,12 +47,7 @@ const clientes = {
                     ]
                 }
             },
-        },
-        positiveInt: {
-            type: 'integer',
-            minimum: 0,
-            exclusiveMinimum: true,
-        },
+        }
     },
 }
 

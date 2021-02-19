@@ -1,7 +1,8 @@
 const productos = {
     id: 'productos',
     type: 'array',
-    minItems: 20,
+    maxItems: 10,
+    uniqueItems: true,
     items: {$ref: '#/definitions/productos'},
     definitions: {
         productos: {
@@ -18,17 +19,17 @@ const productos = {
             ],
             properties: {
                 id: {
-                    $ref: '#/definitions/positiveInt',
+                    $ref: 'positiveInt',
                 },
                 nombre: {
                     type: 'string',
                     enum: [
-                        'producto 1',
-                        'producto 2',
-                        'producto 3',
-                        'producto 4',
-                        'producto 5',
-                        'producto 6',
+                        'Rosas',
+                        'Girasoles',
+                        'Crisantemos',
+                        'Aglonemas',
+                        'Begonias',
+                        'Cóleos',
                     ],
                 },
                 descripcion: {
@@ -63,12 +64,7 @@ const productos = {
                     },
                 }
             },
-        },
-        positiveInt: {
-            type: 'integer',
-            minimum: 0,
-            exclusiveMinimum: true,
-        },
+        }
     },
 }
 
