@@ -1,26 +1,22 @@
-id,experiencia,acuerdo,certificaciones,nombre,apellido,email,tel
-72858286,19,Si,certificacion 1,Barbara,Ureña,Jorge_Tafoya@gmail.com,971.528.514
-49169301,12,No,certificacion 3,Silvia,Cerda,Elvira_Serrato88@hotmail.com,970334686
-2255780,32,Si,certificacion 2,Catalina,Jasso,Juan.Roque69@yahoo.com,996 358 161
-69285704,31,No,certificacion 2,Tomás,Tapia,Gabriela4@gmail.com,937 947 197
-50293822,17,No,certificacion 2,Cristina,Gallardo,Cristina42@gmail.com,918-343-551
-75946600,22,No,certificacion 3,Jesús,Zamudio,Sonia_Toro@gmail.com,948 382 758
-27827217,40,Si,certificacion 3,Óscar,Navarrete,Salvador.Ramos@gmail.com,942-760-910
-99449023,33,No,certificacion 3,Clara,Badillo,Lorenzo32@gmail.com,902.269.475
-6827940,24,Si,certificacion 2,Pablo,Arreola,Rosalia47@gmail.com,993932321
-55062904,2,Si,certificacion 2,Amalia,Rosales,MaraCristina_Orellana98@yahoo.com,934018159
-1898968,17,No,certificacion 2,Manuel,Corona,Caridad_Amaya87@gmail.com,934.833.333
-20455138,32,No,certificacion 3,Cristóbal,Cavazos,Marisol_Delro@hotmail.com,955 895 686
-41405391,36,No,certificacion 3,Daniela,Trejo,Vicente_Terrazas@hotmail.com,999 445 403
-41716012,28,Si,certificacion 2,Ana Luisa,Pabón,Gustavo.Alanis@hotmail.com,933 326 478
-76371062,19,No,certificacion 3,Antonio,Soliz,Andrs95@gmail.com,937.870.657
-66728424,38,No,certificacion 3,Virginia,Leal,Gabriela99@yahoo.com,914 002 751
-80776540,16,No,certificacion 2,Mercedes,Bustos,Emilio_Menchaca@gmail.com,927822215
-11115004,19,Si,certificacion 2,María Eugenia,Ibarra,Claudia97@gmail.com,977.461.987
-65906075,23,Si,certificacion 3,Susana,Bravo,Sancho_Regalado85@yahoo.com,901.338.837
-77099428,16,Si,certificacion 3,Jaime,Bravo,Rosalia.Nava31@hotmail.com,901053883
-55034610,34,No,certificacion 1,María Elena,Echevarría,Caridad.Raya@yahoo.com,978.589.425
-47302306,34,Si,certificacion 2,Clemente,Valverde,Isabel_Rodrguez@yahoo.com,961425472
-44751440,25,No,certificacion 1,Mariano,Espinosa,Hernn.Montao12@yahoo.com,949 178 649
-16242413,6,Si,certificacion 1,Cristina,Jiménez,Ernesto.Arce41@gmail.com,950 313 475
-65965789,17,Si,certificacion 1,Victoria,Cárdenas,Samuel_Pelayo67@gmail.com,967-803-000
+id,experiencia,nombre,apellido,email,tel,test
+7726812,10,Ana Luisa,Maya,Adriana.Lebrn16@yahoo.com,3063-28-20,Soliz Leal
+16622178,33,Andrea,Corona,JosLuis85@hotmail.com,0415-23-65,Amador Solano
+1029085,31,Diana,Ozuna,Raquel34@gmail.com,1101-79-27,Frías Reyna
+3075962,13,Cristina,Flores,Mateo30@gmail.com,1994-00-12,Banda Carrasquillo
+5685486,10,Armando,Abreu,Caridad39@hotmail.com,1168-91-75,Tamayo Badillo
+95804625,39,Eduardo,Luevano,Patricio_Flrez78@yahoo.com,0810-23-97,Corrales Covarrubias
+89221451,34,Carmen,Alejandro,Amalia94@gmail.com,5447-25-69,Pacheco Ruelas
+26106242,24,Marilú,Ordóñez,Mario_Mondragn@gmail.com,1098-78-63,Acuña Alcaraz
+80153354,18,Benito,Vanegas,Ernesto_Guajardo@gmail.com,7145-66-09,León Roque
+2317809,33,José María,Moya,Federico14@yahoo.com,3434-30-22,Olivera Camarillo
+97241320,33,Julio,Correa,Roco.Mungua65@gmail.com,5306-13-45,Raya Carrasco
+81035672,25,Ricardo,Arriaga,Marcela.Barrios@yahoo.com,9044-17-54,Meza Menéndez
+99921865,37,Eloisa,Peña,Daniel_Tllez93@yahoo.com,3393-12-31,Flórez Porras
+44235974,7,Sancho,Gastélum,Ernesto_Irizarry@gmail.com,3890-12-82,Heredia Valle
+68061633,1,Rebeca,Merino,Clemente_Caraballo41@gmail.com,1331-96-61,Arellano Pulido
+4314826,34,Marta,Aguilar,JosEduardo.Serrano@hotmail.com,9578-21-09,Almaráz Rolón
+5379096,23,Dolores,Alonso,ngela5@yahoo.com,6387-78-90,Valles Salinas
+91908037,14,Cristián,Calderón,Hernn60@hotmail.com,9046-44-86,Olivo Matos
+79329773,29,María Teresa,Castillo,Horacio.Bauelos@gmail.com,9253-56-66,Osorio Irizarry
+52993473,1,Raúl,Treviño,Miguelngel_Armas@hotmail.com,1860-96-39,Márquez Tamez
+94254215,35,Marcela,Soto,Mateo_Tapia81@gmail.com,2140-90-76,Osorio Galván

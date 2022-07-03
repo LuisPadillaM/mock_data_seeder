@@ -1,8 +1,8 @@
 const colaboradores = {
   id: 'colaboradores',
   type: 'array',
-  minItems: 23,
-  maxItems: 25,
+  minItems: 21,
+  maxItems: 21,
   uniqueItems: true,
   items: {$ref: '#/definitions/colaboradores'},
   definitions: {
@@ -11,12 +11,11 @@ const colaboradores = {
       required: [
         'id',
         'experiencia',
-        'acuerdo',
-        'certificaciones',
         'nombre',
         'apellido',
         'email',
         'tel',
+        'test'
       ],
       properties: {
         id: {
@@ -27,28 +26,13 @@ const colaboradores = {
           minimum: 0,
           maximum: 40
         },
-        acuerdo: {
-          type: 'string',
-          enum: [
-              'Si',
-              'No'
-          ]
-        },
-        certificaciones: {
-          type: 'string',
-          enum: [
-              'certificacion 1',
-              'certificacion 2',
-              'certificacion 3',
-          ]
-        },
         nombre: {
           type: 'string',
           faker: 'name.firstName',
         },
         apellido: {
           type: 'string',
-          faker: 'name.lastName',
+          faker:'custom.fullName'
         },
         email: {
           type: 'string',
@@ -56,7 +40,9 @@ const colaboradores = {
         },
         tel: {
           type: 'string',
-          faker: 'phone.phoneNumber',
+          faker: {
+            'phone.phoneNumber': ['####-##-##']
+          },
         }
       },
     }

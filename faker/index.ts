@@ -9,7 +9,12 @@ import composedSchema, {models} from './models'
 const type = 'csv'
 const entity = 'colaboradores'
 
-extend('faker', () => faker)
+extend('faker', () => {
+  faker.custom = {
+    fullName: () => `${faker.name.lastName()} ${faker.name.lastName()}`
+  }
+  return faker
+})
 
 resolve(composedSchema.properties.colaboradores, models as Schema[]).then(async (result) => {
   const csv = new ObjToCsv(result)
